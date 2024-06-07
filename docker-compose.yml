@@ -19,6 +19,7 @@ services:
     build:
       context: ./image_generator
       dockerfile: Dockerfile
+    runtime: nvidia
     environment:
       - TELEGRAM_TOKEN=${TELEGRAM_TOKEN}
     volumes:
